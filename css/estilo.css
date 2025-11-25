@@ -139,7 +139,10 @@ header {
     font-weight: bold;
     text-align: center;
     position: relative;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
+
 
 
 

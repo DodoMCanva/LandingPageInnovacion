@@ -12,9 +12,18 @@ const images = [
 let currentImageIndex = 0;
 
 function changeImage() {
-    currentImageIndex = (currentImageIndex + 1) % images.length;
-    mockup.style.backgroundImage = `url(${images[currentImageIndex]})`;
+    mockup.style.opacity = 0;
+
+    setTimeout(() => {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        mockup.style.backgroundImage = `url(${images[currentImageIndex]})`;
+        mockup.style.opacity = 1;
+    }, 1000);
 }
+
+setInterval(changeImage, 5000);
+changeImage(); 
+ 
 
 emailjs.init('dMEs7wIzOklbxRa4Q');
 

@@ -1,88 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="src/ico_app.png">
     <title>Salud Móvil</title>
-
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
 <body>
-    <!-- Header / Navegación: enlaces de anclaje a cada sección -->
     <header>
         <div class="container nav" aria-label="Navegación primaria">
-            <div class="brand"><span class="dot"></span> Salud Móvil</div>
+            <div class="brand"></span> Salud Móvil</div>
             <nav>
                 <a href="#problema">Problema</a>
                 <a href="#solucion">Solución</a>
-                <a href="#demo">Demo</a>
-                <a href="#feedback">Feedback</a>
-                <a class="cta" href="#cta">Probar Beta</a>
+                <a href="#demo">Demostración</a>
+                <a href="#feedback">Retroalimentación</a>
+                <a class="cta" href="#cta">Probar</a>
             </nav>
         </div>
     </header>
 
-    <!-- HERO: propuesta corta + CTA -->
     <section class="container hero" id="inicio">
         <div>
-            <h1>Resuelve <span style="color:var(--accent)">[dolor del usuario]</span> en minutos, no en semanas</h1>
-            <p>Una explicación en una sola línea de lo que hace tu solución y para quién está diseñada. Evita jerga
-                técnica.</p>
-            <div class="badges" aria-label="beneficios clave">
-                <span class="badge">Rápido de implementar</span>
-                <span class="badge">Fácil de usar</span>
-                <span class="badge">Resultados medibles</span>
-            </div>
+            <h1>Resuelve <span style="color:var(--accent)">el mal manejo</span> de los servicios de salud</h1>
+            <p>Administra tus citas y servicios de salud de manera comoda</p>
+
             <div style="margin-top:18px; display:flex; gap:10px;">
                 <a class="cta" href="#feedback">Danos tu opinión</a>
                 <a class="cta" href="#demo"
                     style="background:transparent; color:var(--accent); border:1px solid #233148">Ver demo</a>
             </div>
-            <p class="hint">⟶ Tip: Aquí puedes insertar un mini video (30–45s) o un GIF del flujo principal.</p>
         </div>
-        <div class="mockup" aria-label="Mockup o captura del prototipo">
-            Área de Mockup / Screenshot del prototipo
-        </div>
+
+        <div class="mockup" aria-label="Mockup del prototipo"></div>
     </section>
 
-    <!-- PROBLEMA -->
     <section id="problema">
         <div class="container grid-2">
             <div>
                 <h2>El problema</h2>
-                <p class="lead">Describe en 2–3 líneas qué duele hoy y cómo impacta a tu usuario. Añade 1–2
-                    datos/insights de entrevistas o encuestas.</p>
+                <p class="lead">Nuestro cliente tiene problemas con el mal manejo del medicamento, equipo y personal
+                    médico en los centros de salud provocando frustración e inseguridad por el mal servicio porque no
+                    cuenta con un sistema para administrar dichos recursos de manera eficiente. </p>
                 <div class="card bullets">
                     <div class="bullet">
                         <div class="icon">1</div>
-                        <div><strong>Contexto breve:</strong> ¿Dónde sucede? ¿Con qué frecuencia?</div>
+                        <div><strong>Contexto breve:</strong> Sucede principalmente en zonas rurales o poco
+                            desarrolladas con mucha frecuencia</div>
                     </div>
                     <div class="bullet">
                         <div class="icon">2</div>
-                        <div><strong>Consecuencia:</strong> Tiempo/costo/errores que genera el problema.</div>
+                        <div><strong>Consecuencia:</strong> Generando desde inseguridad en el paciente hasta problemas
+                            mas graves como daños cronicos </div>
                     </div>
                     <div class="bullet">
                         <div class="icon">3</div>
-                        <div><strong>Evidencia:</strong> Cita un hallazgo (entrevista/encuesta/piloto).</div>
+                        <div><strong>Evidencia:</strong> "Por culpa de la mala administración termine con dolor cronico
+                            en el oido" - Juana Osorio</div>
                     </div>
                 </div>
             </div>
             <div>
                 <h2>Usuario objetivo</h2>
-                <p class="lead">Define el perfil (rol, industria, tamaño, contexto) y la situación de uso.</p>
                 <div class="card bullets">
                     <div class="bullet">
                         <div class="icon">👤</div>
-                        <div><strong>Quién:</strong> Persona/rol que sufre el problema.</div>
+                        <div><strong>Quién:</strong> Paciente mayor de edad </div>
                     </div>
                     <div class="bullet">
                         <div class="icon">📍</div>
-                        <div><strong>Cuándo/dónde:</strong> Momento y entorno de uso.</div>
+                        <div><strong>Cuándo/dónde:</strong> De zonas rurales o poco desarrolladas que tienden a tener
+                            mal manejo de los servicios</div>
                     </div>
                     <div class="bullet">
                         <div class="icon">🎯</div>
-                        <div><strong>Métrica clave:</strong> ¿Qué intentan mejorar?</div>
+                        <div><strong>Métrica clave:</strong> su frustración con el servicio de salud</div>
                     </div>
                 </div>
             </div>
@@ -94,20 +90,21 @@
         <div class="container grid-2">
             <div>
                 <h2>La solución</h2>
-                <p class="lead">Explica qué hace tu producto en términos simples. Evita funciones sueltas: enfócate en
-                    resultados.</p>
                 <div class="card bullets">
                     <div class="bullet">
                         <div class="icon">✓</div>
-                        <div><strong>Beneficio 1:</strong> Resultado concreto (ej. -35% tiempo de registro).</div>
+                        <div><strong>Asegura los medicamentos:</strong> Registro total de recetas medicas realizadas en
+                            consultas y enviadas </div>
                     </div>
                     <div class="bullet">
                         <div class="icon">✓</div>
-                        <div><strong>Beneficio 2:</strong> Resultado concreto (ej. +20% adopción docente).</div>
+                        <div><strong>Acceso rapido y seguro con los centros de salud:</strong> Citas realizadas en
+                            tiempo real a traves de internet evitando retrasos</div>
                     </div>
                     <div class="bullet">
                         <div class="icon">✓</div>
-                        <div><strong>Beneficio 3:</strong> Resultado concreto (ej. 0 errores de duplicidad).</div>
+                        <div><strong>Consulta oportuna de los servicios disponibles:</strong> Control total de los
+                            servicios disponibles mejorando su accesibilidad</div>
                     </div>
                 </div>
             </div>
@@ -116,19 +113,21 @@
                 <div class="card bullets">
                     <div class="bullet">
                         <div class="icon">★</div>
-                        <div>Feature 1 – breve descripción.</div>
+                        <div>Herramienta para centros de salud y paciente – la herramienta cubre perfectamente ambos
+                            puntos.</div>
                     </div>
                     <div class="bullet">
                         <div class="icon">★</div>
-                        <div>Feature 2 – breve descripción.</div>
+                        <div>Sistema de localización y consulta – Consulta en cualquier momento servicios disponibles.
+                        </div>
                     </div>
                     <div class="bullet">
                         <div class="icon">★</div>
-                        <div>Feature 3 – breve descripción.</div>
+                        <div>Interfaz limipa y sencilla – Aplicación con opciones a la vista para realizar tus tramites
+                            de manera mas comoda.</div>
                     </div>
                 </div>
-                <p class="hint" style="margin-top:10px">⟶ Tip: Mantén 3–5 puntos máximo. Linkea a un PDF o doc si
-                    quieres detalle.</p>
+
             </div>
         </div>
     </section>
@@ -137,28 +136,15 @@
     <section id="demo">
         <div class="container">
             <h2>Demo / Prototipo</h2>
-            <p class="lead">Inserta un video corto, un carrusel de capturas o un prototipo incrustado (Figma/iframe).
-            </p>
             <div class="demo" aria-label="Área de demostración">
-                Área para <strong>video</strong> / <strong>iframe</strong> / <strong>capturas</strong>
-                <!-- Ejemplo Figma:
-        <iframe style="width:100%; height:480px; border:0; border-radius:12px" src="https://www.figma.com/embed?embed_host=share&url=..." allowfullscreen></iframe>
-        -->
+                <video style="width:100%; height:480px; border-radius:12px" controls>
+                    <source src="src/video.mp4" type="video/mp4">
+                    <!--
+                    <source src="path/to/your/video/demo.ogg" type="video/ogg">
+                    <p>Tu navegador no soporta el elemento de video.</p>-->
+                </video>
             </div>
-        </div>
-    </section>
 
-    <!-- PRUEBA SOCIAL (si la hay) -->
-    <section>
-        <div class="container">
-            <h2>Evidencia / Prueba social</h2>
-            <p class="lead">Opcional: comentarios de usuarios de una prueba piloto o frases de entrevistas.</p>
-            <div class="testimonials">
-                <div class="quote">“Me ahorró horas cada semana.”<br /><small>— Docente de Ingeniería</small></div>
-                <div class="quote">“Por fin veo todo en un solo lugar.”<br /><small>— Coordinador académico</small>
-                </div>
-                <div class="quote">“Fácil de usar desde el primer día.”<br /><small>— Estudiante</small></div>
-            </div>
         </div>
     </section>
 
@@ -166,18 +152,43 @@
     <section>
         <div class="container">
             <h2>Preguntas frecuentes</h2>
-            <details>
-                <summary>¿Para quién es esta solución?</summary>
-                <div class="lead">Explica tu ICP (perfil de cliente ideal).</div>
-            </details>
-            <details>
-                <summary>¿Cómo empiezo a usarla?</summary>
-                <div class="lead">Indica pasos simples (3–4).</div>
-            </details>
-            <details>
-                <summary>¿Tienen versión beta o demo?</summary>
-                <div class="lead">Describe acceso: formulario, correo o enlace.</div>
-            </details>
+            <div class="card">
+                <details>
+                    <summary>¿Para quién es esta solución?</summary>
+                    <div class="lead">Esta aplicación está diseñada para pacientes que necesitan gestionar sus citas
+                        médicas y tratamientos, así como para centros de salud que desean mejorar la administración de
+                        recursos como medicamentos, citas y servicios disponibles.</div>
+                </details>
+                <details>
+                    <summary>¿Cómo empiezo a usarla?</summary>
+                    <div class="lead">
+                        Aquí te dejamos los pasos para comenzar a utilizar la aplicación:
+                        <ol>
+                            <li><strong>Regístrate:</strong> Crea una cuenta en la aplicación con tu correo electrónico.
+                            </li>
+                            <li><strong>Configura tu perfil:</strong> Completa tu información personal y médica
+                                (opcional).</li>
+                            <li><strong>Accede a los servicios:</strong> Consulta los centros de salud disponibles y haz
+                                tu primera cita médica.</li>
+                            <li><strong>Gestiona tus citas:</strong> Podrás ver todas tus citas, recetas y servicios
+                                disponibles en tiempo real.</li>
+                        </ol>
+                    </div>
+                </details>
+                <details>
+                    <summary>¿Tienen versión beta o demo?</summary>
+                    <div class="lead">
+                        Sí, actualmente ofrecemos una versión beta para usuarios seleccionados. Para obtener acceso,
+                        solo tienes que:
+                        <ol>
+                            <li>Registrarte en nuestra lista de espera.</li>
+                            <li>Recibir un correo electrónico con un enlace de acceso a la beta.</li>
+                            <li>Probar la aplicación y darnos tu retroalimentación.</li>
+                        </ol>
+                        <p>¡Regístrate para ser uno de los primeros en probarla!</p>
+                    </div>
+                </details>
+            </div>
         </div>
     </section>
 
@@ -192,16 +203,6 @@
                         <div>
                             <label for="nombre">Nombre (opcional)</label>
                             <input id="nombre" name="nombre" placeholder="Tu nombre" />
-                        </div>
-                        <div>
-                            <label for="rol">Rol</label>
-                            <select id="rol" name="rol" required>
-                                <option value="">Selecciona…</option>
-                                <option>Docente</option>
-                                <option>Estudiante</option>
-                                <option>Coordinación</option>
-                                <option>Otro</option>
-                            </select>
                         </div>
                     </div>
 
@@ -223,9 +224,7 @@
                     <label for="funciones">¿Qué función te gustaría añadir?</label>
                     <input id="funciones" name="funciones" placeholder="Ej. exportar a Excel, historial, etc." />
 
-                    <button class="btn" type="submit">Enviar feedback</button>
-                    <p class="hint">Tip: Conecta este formulario a Google Forms/Sheets/Typeform para centralizar
-                        respuestas.</p>
+                    <button id="btnRetro" class="btn" type="submit">Enviar retroalimentación</button>
                 </form>
             </div>
 
@@ -235,7 +234,7 @@
                 <form action="#" method="post" aria-label="Registro beta">
                     <label for="email">Correo electrónico</label>
                     <input id="email" type="email" name="email" placeholder="tu@correo.com" required />
-                    <button class="btn" type="submit" style="margin-top:10px">Quiero probarla</button>
+                    <button id="btnPrueba" class="btn" type="submit" style="margin-top:10px">Quiero probarla</button>
                     <p class="hint">Privacidad: Usaremos tu correo solo para avisarte sobre la beta.</p>
                 </form>
             </div>
@@ -246,15 +245,16 @@
     <footer>
         <div class="container">
             <div style="display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap">
-                <div>© <span id="y"></span> Nombre del Equipo / Proyecto</div>
+                <div>© <span id="y"></span> Salud Móvil</div>
                 <div>
-                    <a href="#">Contacto</a> · <a href="#">Aviso de Privacidad</a>
+                    <a href="#">Contacto</a> saludmovil@gmail.com <a href="#">Aviso de Privacidad</a>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="js/funciones.js"></script>
+
 </body>
 
 </html>
